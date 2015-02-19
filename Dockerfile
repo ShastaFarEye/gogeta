@@ -8,4 +8,5 @@ RUN gom install
 RUN gom test
 
 EXPOSE 7777
-ENTRYPOINT ["gogeta", "-etcdAddress", "http://172.17.42.1:4001", "-alsologtostderr=true"]
+#ENTRYPOINT ["gogeta", "-etcdAddress", "http://172.17.42.1:4001", "-alsologtostderr=true"]
+ENTRYPOINT ["/bin/sh"]
